@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.no-scrollbar::-webkit-scrollbar{
+  display: none;
+  scroll-padding: 5px;
+}
+.svg-style{
+  position: absolute;
+  top:40px;
+  z-index: -3;
+  height:14em;
+  width:100%;
+  transform: scale(1.5,3);
+}
+
+.scale-down:active{
+  transform: scale(.95);
+}
+
+.post-content{
+  display: -webkit-box;
+  overflow: hidden;
+  text-align: left;
+  padding:4px;
+  max-height: 80px;
+  text-overflow: ellipsis;
+}
